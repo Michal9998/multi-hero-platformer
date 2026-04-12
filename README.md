@@ -24,11 +24,13 @@ At the current stage, the following features have been implemented:
 2. Install the required libraries:
    ```bash
    pip install -r requirements.txt
-3. Run the game: python src/main.py
+3. Run the game:
+   ```bash
+   python src/main.py
 
 ## Controls
-* ** A / D or Arrow Keys: Move left/right.
+* A / D or Arrow Keys: Move left/right.
 
-* ** W / Spacebar or Up Arrow: Jump.
+* W / Spacebar or Up Arrow: Jump.
 
-* ** ESC: Return to menu / Level selection.
+* ESC: Return to menu / Level selection.
