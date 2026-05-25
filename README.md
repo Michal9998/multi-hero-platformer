@@ -1,18 +1,27 @@
-# Hero Shift - Early Demo
+# Hero Shift - Demo 2
 
 ## Project Description
-**Hero Shift** is a 2D platformer built in Python, where the core mechanic revolves around switching between three heroes with unique abilities (Ninja, Guard, Engineer). The project focuses on utilizing a state machine for game management and maintaining a modular code architecture.
+Hero Shift is a 2D platformer built in Python, where the core mechanic revolves around dynamically switching between three heroes with unique abilities (Knight, Ninja, Miner). The project focuses on utilizing a robust state machine for game management, a modular OOP code architecture, and intricate level design using Tiled Map Editor.
 
-## Current Progress (First Demo)
-At the current stage, the following features have been implemented:
-* **Menu System:** Main menu powered by a state machine (Menu, Level Select, Settings, Play, Win).
-* **Physics and Movement:** Basic character movement, gravity, jumping system, and collision detection.
-* **Map System:** Loading levels from the `.tmx` format (Tiled Map Editor).
-* **Camera:** Dynamic camera following the player (Smooth Scrolling).
-* **Visuals:** Implementation of custom background graphics (1280x720) and level tiles.
-* **Win Mechanic:** Object system on the map (chest) that triggers the level completion screen.
+## Current Progress (Demo 2)
+
+At the current stage, the core gameplay loop has been fully realized with the following features:
+
+* **Dynamic Hero Switching:** Players can swap between three distinct classes on the fly:
+    * **Knight:** A heavy tank with a single jump who treats standard hazards (spikes) as solid, walkable ground.
+    * **Ninja:** An agile character equipped with a double jump to reach high platforms.
+    * **Miner:** A compact character with a smaller hitbox to fit through tight spaces (single jump).
+* **Advanced Obstacles & Interactions:**
+    * **Hazards:** Spikes that kill standard characters upon touch.
+    * **Fragile Platforms:** Blocks that tremble upon contact, break after a set duration, and respawn dynamically.
+    * **Deadly Blocks:** Instant-kill zones (e.g., acid/void) that eliminate any character, regardless of class.
+* **Expanded Level Design:** 5 fully playable levels with increasing difficulty, featuring location-based narrative triggers (e.g., Easter eggs and warnings).
+* **Menu System:** Main menu powered by a state machine (Menu, Level Select, Settings, Play, Pause, Win).
+* **Physics and Movement:** Advanced character movement, gravity, multi-jump system, and complex collision detection that updates in real-time based on the active hero's traits.
+* **Camera:** Dynamic camera following the player (Smooth Scrolling) with map boundary clamping.
 
 ## Technologies and Tools
+
 * **Language:** Python 3.12+
 * **Libraries:** Pygame-CE, PyTMX.
 * **Graphics:** Canva (UI & Background), Piskel (Pixel Art Assets).
@@ -20,6 +29,7 @@ At the current stage, the following features have been implemented:
 * **IDE:** Visual Studio Code.
 
 ## How to Run the Game
+
 1. Ensure you have Python 3.12 or newer installed.
 2. Install the required libraries:
    ```bash
@@ -32,5 +42,7 @@ At the current stage, the following features have been implemented:
 * A / D or Arrow Keys: Move left/right.
 
 * W / Spacebar or Up Arrow: Jump.
+  
+* 1 / 2 / 3: Switch Hero (1: Knight, 2: Ninja, 3: Miner).
 
 * ESC: Return to menu / Level selection.
