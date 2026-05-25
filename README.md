@@ -14,7 +14,7 @@ At the current stage, the core gameplay loop has been fully realized with the fo
 * **Advanced Obstacles & Interactions:**
     * **Hazards:** Spikes that kill standard characters upon touch.
     * **Fragile Platforms:** Blocks that tremble upon contact, break after a set duration, and respawn dynamically.
-    * **Deadly Blocks:** Instant-kill zones (e.g., acid/void) that eliminate any character, regardless of class.
+    * **Deadly Blocks:** Instant-kill zones that eliminate any character, regardless of class.
 * **Expanded Level Design:** 5 fully playable levels with increasing difficulty, featuring location-based narrative triggers (e.g., Easter eggs and warnings).
 * **Menu System:** Main menu powered by a state machine (Menu, Level Select, Settings, Play, Pause, Win).
 * **Physics and Movement:** Advanced character movement, gravity, multi-jump system, and complex collision detection that updates in real-time based on the active hero's traits.
