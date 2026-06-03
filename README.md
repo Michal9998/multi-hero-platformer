@@ -16,6 +16,13 @@ Hero Shift is a dynamic 2D puzzle-platformer game built in Python using the Pyga
 ## AI Usage Disclosure
 The codebase, architecture design, reStructuredText docstrings, inline code commenting, and markdown documentation files were developed and refined with the technical assistance of generative AI tools.
 
+## Code Documentation
+
+The project features a comprehensive technical code documentation generated automatically via Sphinx. To view the documentation with all styles, modules, and search functionalities working correctly:
+1. Download the entire `docs_sphinx_html` folder from this repository.
+2. Ensure that all files and subfolders (such as `_static` and `.doctrees`) remain together in that exact same directory.
+3. Open the `index.html` file inside that folder using any modern web browser.
+
 ## Technologies and Tools
 
 * **Language:** Python 3.12+
