@@ -16,39 +16,6 @@ Hero Shift is a dynamic 2D puzzle-platformer game built in Python using the Pyga
 ## AI Usage Disclosure
 The codebase, architecture design, reStructuredText docstrings, inline code commenting, and markdown documentation files were developed and refined with the technical assistance of generative AI tools.
 
-## Architecture & Game State Diagram
-
-The project eschews a complex structural class architecture in favor of a robust, centralized **Finite State Machine (FSM)**. This state-driven design governs the main game loop, ensuring seamless transitions between menus, active gameplay, and UI overlays. 
-
-Below is the automated State Diagram visualizing the flow of the `current_state` logic:
-
-```mermaid
-stateDiagram-v2
-    direction TB
-    
-    [*] --> MENU : Launch Game
-    
-    MENU --> LEVEL_SELECT : Click 'Play'
-    MENU --> SETTINGS : Click 'Settings'
-    MENU --> [*] : Click 'Quit'
-    
-    LEVEL_SELECT --> MENU : Click 'Back'
-    LEVEL_SELECT --> PLAY : Click 'Level 1-5'
-    
-    PLAY --> PAUSE : Press 'ESC' / Click 'Pause'
-    PLAY --> WIN : Touch Chest (Victory Condition)
-    
-    PAUSE --> PLAY : Click 'Resume'
-    PAUSE --> SETTINGS : Click 'Settings'
-    PAUSE --> LEVEL_SELECT : Click 'Exit to Menu'
-    
-    WIN --> LEVEL_SELECT : Click 'Back to Menu'
-    
-    SETTINGS --> MENU : Click 'Back' (if from Menu)
-    SETTINGS --> PAUSE : Click 'Back' (if from Pause)
-```
-
-
 ## Technologies and Tools
 
 * **Language:** Python 3.12+
