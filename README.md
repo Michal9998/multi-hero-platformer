@@ -75,7 +75,7 @@ If you want to view the code or modify the game:
 2. Clone this repository to your local machine.
 3. Install the required dependencies:
    ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Run the game:
    ```bash
