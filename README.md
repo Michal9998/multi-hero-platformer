@@ -14,7 +14,7 @@ Hero Shift is a dynamic 2D puzzle-platformer game built in Python using the Pyga
 * **Robust UI & Audio Control:** Includes an advanced options panel with seamless fullscreen toggling (using aspect-ratio scaling) and a drag-and-drop custom volume slider.
 
 ## AI Usage Disclosure
-The codebase, architecture design, reStructuredText docstrings, inline code commenting, and markdown documentation files were developed and refined with the technical assistance of generative AI tools.
+The codebase, architecture design, reStructuredText docstrings and inline code commenting were developed and refined with the technical assistance of generative AI tools.
 
 ## Code Documentation
 
