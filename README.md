@@ -20,7 +20,7 @@ The codebase, architecture design, reStructuredText docstrings, inline code comm
 
 The project features a comprehensive technical code documentation generated automatically via Sphinx. To view the documentation with all styles, modules, and search functionalities working correctly:
 1. Download the entire `docs_sphinx_html` folder from this repository.
-2. Ensure that all files and subfolders (such as `_static` and `.doctrees`) remain together in that exact same directory.
+2. Ensure that all files and subfolders (such as `_static` ) remain together in that exact same directory.
 3. Open the `index.html` file inside that folder using any modern web browser.
 
 ## Technologies and Tools
